@@ -4,12 +4,33 @@
   "description": "Additional helper functions for date-fns",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "tslint --project .",
+    "clean": "rimraf lib",
+    "build": "tsc --project .",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "prepack": "npm run-script clean && npm run-script build"
   },
   "keywords": [
     "date-fns",
     "date"
   ],
   "author": "Marc Reuter",
-  "license": "MIT"
+  "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "date-fns": "^2.0.0-alpha.31"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.13",
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2",
+    "rimraf": "^2.6.3",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.17.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "typescript": "^3.5.1"
+  }
 }
