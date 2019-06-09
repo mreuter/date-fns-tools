@@ -1,0 +1,15 @@
+{
+  "name": "@mreuter/date-fns-tools",
+  "version": "1.0.0",
+  "description": "Additional helper functions for date-fns",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "date-fns",
+    "date"
+  ],
+  "author": "Marc Reuter",
+  "license": "MIT"
+}
